@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>Huma Menahil | Cybersecurity Professional</title>
 
     <meta name="description"
-          content="Huma Menahil - Cybersecurity Professional, Penetration Tester, Digital Forensics, Cloud Security, Malware Analysis and Security Research.">
+          content="Huma Menahil - Cybersecurity Professional specializing in penetration testing, digital forensics, malware analysis, cloud security, vulnerability research and cybersecurity training.">
 
     <style>
+
         * {
             margin: 0;
             padding: 0;
@@ -25,17 +30,23 @@
         }
 
         a {
-            color: inherit;
             text-decoration: none;
+            color: inherit;
         }
+
+        /* NAVIGATION */
 
         nav {
             position: sticky;
             top: 0;
             z-index: 1000;
+
             background: rgba(8, 11, 16, 0.97);
+
             border-bottom: 1px solid #1f2937;
+
             padding: 18px 7%;
+
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -65,13 +76,24 @@
             color: #38bdf8;
         }
 
+
+        /* HERO */
+
         .hero {
+
             min-height: 90vh;
+
             display: flex;
             align-items: center;
+
             padding: 80px 7%;
+
             background:
-                radial-gradient(circle at 80% 20%, #0c3550 0%, transparent 30%),
+                radial-gradient(
+                    circle at 80% 20%,
+                    #0c3550 0%,
+                    transparent 30%
+                ),
                 #080b10;
         }
 
@@ -81,15 +103,21 @@
 
         .tag {
             color: #38bdf8;
+
             font-size: 15px;
+
             letter-spacing: 2px;
+
             text-transform: uppercase;
+
             margin-bottom: 15px;
         }
 
         h1 {
             font-size: clamp(45px, 7vw, 80px);
+
             line-height: 1.05;
+
             margin-bottom: 20px;
         }
 
@@ -99,45 +127,67 @@
 
         .hero p {
             color: #94a3b8;
-            max-width: 760px;
+
+            max-width: 800px;
+
             font-size: 18px;
+
             margin-bottom: 30px;
         }
 
+
+        /* BUTTONS */
+
         .buttons {
             display: flex;
+
             gap: 15px;
+
             flex-wrap: wrap;
         }
 
         .btn {
             display: inline-block;
+
             padding: 12px 22px;
+
             border: 1px solid #38bdf8;
+
             border-radius: 6px;
+
             color: #38bdf8;
+
             transition: 0.3s;
         }
 
         .btn.primary {
             background: #38bdf8;
+
             color: #061018;
+
             font-weight: bold;
         }
 
         .btn:hover {
             transform: translateY(-3px);
+
             background: #38bdf8;
+
             color: #061018;
         }
 
+
+        /* SECTIONS */
+
         section {
             padding: 90px 7%;
+
             border-bottom: 1px solid #151c25;
         }
 
         .section-title {
             font-size: 35px;
+
             margin-bottom: 15px;
         }
 
@@ -147,678 +197,1333 @@
 
         .section-intro {
             color: #94a3b8;
+
             max-width: 800px;
+
             margin-bottom: 40px;
         }
 
+
+        /* ABOUT */
+
         .about-grid {
+
             display: grid;
+
             grid-template-columns: 1fr 1fr;
+
             gap: 35px;
         }
 
         .card {
+
             background: #0d1219;
+
             border: 1px solid #1f2937;
+
             border-radius: 10px;
+
             padding: 25px;
+
             transition: 0.3s;
         }
 
         .card:hover {
+
             transform: translateY(-5px);
+
             border-color: #38bdf8;
         }
 
         .card h3 {
+
             margin-bottom: 12px;
+
             color: #f8fafc;
         }
 
         .card p {
+
             color: #94a3b8;
         }
 
+
+        /* SKILLS */
+
         .skills {
+
             display: flex;
+
             flex-wrap: wrap;
+
             gap: 12px;
         }
 
         .skill {
+
             background: #0d1219;
+
             border: 1px solid #263244;
+
             padding: 10px 16px;
+
             border-radius: 5px;
+
             color: #cbd5e1;
+
             font-size: 14px;
+
             transition: 0.3s;
         }
 
         .skill:hover {
+
             border-color: #38bdf8;
+
             color: #38bdf8;
         }
 
+
+        /* PROJECTS */
+
         .projects {
+
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
             gap: 22px;
         }
 
         .project {
+
             background: #0d1219;
+
             border: 1px solid #1f2937;
+
             border-radius: 10px;
+
             padding: 28px;
+
             transition: 0.3s;
         }
 
         .project:hover {
+
             transform: translateY(-5px);
+
             border-color: #38bdf8;
         }
 
         .project-number {
+
             color: #38bdf8;
+
             font-size: 13px;
+
             margin-bottom: 12px;
+
             letter-spacing: 1px;
         }
 
         .project h3 {
+
             margin-bottom: 12px;
+
             font-size: 21px;
         }
 
         .project p {
+
             color: #94a3b8;
+
             margin-bottom: 15px;
         }
 
         .project ul {
+
             padding-left: 20px;
+
             color: #cbd5e1;
         }
 
         .project li {
+
             margin-bottom: 5px;
         }
 
+
+        /* EXPERIENCE */
+
         .experience {
-            max-width: 900px;
+
+            max-width: 950px;
         }
 
         .timeline-item {
+
             border-left: 2px solid #38bdf8;
+
             padding: 0 0 35px 25px;
+
             margin-bottom: 25px;
         }
 
         .timeline-item h3 {
+
             margin-bottom: 5px;
+
+            font-size: 22px;
         }
 
         .timeline-item .date {
+
             color: #38bdf8;
+
             font-size: 14px;
-            margin-bottom: 10px;
+
+            margin-bottom: 15px;
         }
 
         .timeline-item p {
+
             color: #94a3b8;
         }
 
+
+        /* CERTIFICATIONS */
+
+        .certifications {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 20px;
+        }
+
+        .certificate {
+
+            background: #0d1219;
+
+            border: 1px solid #1f2937;
+
+            border-radius: 10px;
+
+            padding: 25px;
+
+            transition: 0.3s;
+
+            position: relative;
+        }
+
+        .certificate:hover {
+
+            transform: translateY(-5px);
+
+            border-color: #38bdf8;
+        }
+
+        .certificate-icon {
+
+            font-size: 28px;
+
+            margin-bottom: 15px;
+        }
+
+        .certificate h3 {
+
+            color: #f8fafc;
+
+            margin-bottom: 8px;
+
+            font-size: 18px;
+        }
+
+        .certificate .issuer {
+
+            color: #38bdf8;
+
+            font-size: 14px;
+
+            margin-bottom: 10px;
+        }
+
+        .certificate p {
+
+            color: #94a3b8;
+
+            font-size: 14px;
+        }
+
+
+        /* CONTACT */
+
         .contact-box {
+
             text-align: center;
-            max-width: 800px;
+
+            max-width: 850px;
+
             margin: auto;
         }
 
         .contact-box p {
+
             color: #94a3b8;
+
             margin: 15px 0 30px;
         }
 
+
+        /* FOOTER */
+
         footer {
+
             text-align: center;
+
             padding: 30px;
+
             color: #64748b;
+
             font-size: 14px;
         }
+
+
+        /* MOBILE */
+
+        @media (max-width: 900px) {
+
+            .certifications {
+
+                grid-template-columns: 1fr 1fr;
+            }
+
+        }
+
 
         @media (max-width: 800px) {
 
             .nav-links {
+
                 display: none;
             }
 
-            .about-grid,
+            .about-grid {
+
+                grid-template-columns: 1fr;
+            }
+
             .projects {
+
+                grid-template-columns: 1fr;
+            }
+
+            .certifications {
+
                 grid-template-columns: 1fr;
             }
 
             .hero {
+
                 min-height: 80vh;
             }
+
         }
+
     </style>
+
 </head>
+
 
 <body>
 
-    <!-- NAVIGATION -->
-    <nav>
 
-        <div class="logo">
-            Huma<span>.</span>
+<!-- ========================= -->
+<!-- NAVIGATION -->
+<!-- ========================= -->
+
+<nav>
+
+    <div class="logo">
+        Huma<span>.</span>
+    </div>
+
+    <ul class="nav-links">
+
+        <li>
+            <a href="#about">
+                About
+            </a>
+        </li>
+
+        <li>
+            <a href="#skills">
+                Skills
+            </a>
+        </li>
+
+        <li>
+            <a href="#projects">
+                Projects
+            </a>
+        </li>
+
+        <li>
+            <a href="#experience">
+                Experience
+            </a>
+        </li>
+
+        <li>
+            <a href="#certifications">
+                Certifications
+            </a>
+        </li>
+
+        <li>
+            <a href="#contact">
+                Contact
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+
+<!-- ========================= -->
+<!-- HERO -->
+<!-- ========================= -->
+
+<header class="hero">
+
+    <div class="hero-content">
+
+        <div class="tag">
+            Cybersecurity Professional
         </div>
 
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <h1>
+            Huma <span>Menahil</span>
+        </h1>
 
-    </nav>
+        <p>
+
+            Cybersecurity Professional focused on
+            Penetration Testing, Digital & Network
+            Forensics, Cloud Security, Malware Analysis,
+            Vulnerability Research and Cybersecurity Training.
+
+        </p>
+
+        <div class="buttons">
+
+            <a
+                href="#projects"
+                class="btn primary">
+
+                View Projects
+
+            </a>
+
+            <a
+                href="#contact"
+                class="btn">
+
+                Contact Me
+
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
 
 
-    <!-- HERO SECTION -->
-    <header class="hero">
 
-        <div class="hero-content">
+<!-- ========================= -->
+<!-- ABOUT -->
+<!-- ========================= -->
 
-            <div class="tag">
-                Cybersecurity Professional
-            </div>
+<section id="about">
 
-            <h1>
-                Huma <span>Menahil</span>
-            </h1>
+    <h2 class="section-title">
+
+        About <span>Me</span>
+
+    </h2>
+
+    <p class="section-intro">
+
+        I am a cybersecurity professional with
+        practical experience in penetration testing,
+        digital forensics, network forensics,
+        cloud security, malware analysis,
+        vulnerability research and cybersecurity training.
+
+    </p>
+
+
+    <div class="about-grid">
+
+
+        <div class="card">
+
+            <h3>
+                Cybersecurity
+            </h3>
 
             <p>
-                Cybersecurity Professional focused on Penetration Testing,
-                Digital & Network Forensics, Cloud Security, Malware Analysis,
-                Vulnerability Research and Cybersecurity Training.
+
+                Practical experience with security testing,
+                vulnerability assessment, penetration testing,
+                network investigation, malware analysis,
+                vulnerability research and cybersecurity labs.
+
             </p>
 
-            <div class="buttons">
-
-                <a href="#projects" class="btn primary">
-                    View Projects
-                </a>
-
-                <a href="#contact" class="btn">
-                    Contact Me
-                </a>
-
-            </div>
-
         </div>
 
-    </header>
 
+        <div class="card">
 
-    <!-- ABOUT -->
-    <section id="about">
-
-        <h2 class="section-title">
-            About <span>Me</span>
-        </h2>
-
-        <p class="section-intro">
-            I am a cybersecurity professional with hands-on experience in
-            penetration testing, digital forensics, network forensics,
-            cloud security, malware analysis and security research.
-        </p>
-
-        <div class="about-grid">
-
-            <div class="card">
-
-                <h3>Cybersecurity</h3>
-
-                <p>
-                    Practical experience with security testing,
-                    vulnerability assessment, penetration testing,
-                    network investigation, malware analysis and
-                    cybersecurity labs.
-                </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <h3>Cloud & Forensics</h3>
-
-                <p>
-                    Hands-on work with Microsoft Azure environments,
-                    cloud infrastructure, storage, networking, VM images,
-                    snapshots and cloud-based forensic concepts.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- SKILLS -->
-    <section id="skills">
-
-        <h2 class="section-title">
-            Technical <span>Skills</span>
-        </h2>
-
-        <p class="section-intro">
-            Technologies and cybersecurity areas I work with.
-        </p>
-
-        <div class="skills">
-
-            <div class="skill">Penetration Testing</div>
-            <div class="skill">VAPT</div>
-            <div class="skill">Web Application Security</div>
-            <div class="skill">Network Security</div>
-            <div class="skill">Digital Forensics</div>
-            <div class="skill">Network Forensics</div>
-            <div class="skill">Malware Analysis</div>
-            <div class="skill">Vulnerability Research</div>
-            <div class="skill">Cloud Security</div>
-            <div class="skill">Microsoft Azure</div>
-            <div class="skill">Wireshark</div>
-            <div class="skill">Nmap</div>
-            <div class="skill">Metasploit</div>
-            <div class="skill">Kali Linux</div>
-            <div class="skill">DC3DD</div>
-            <div class="skill">DCFLDD</div>
-            <div class="skill">Python</div>
-            <div class="skill">C++</div>
-            <div class="skill">SQL</div>
-
-        </div>
-
-    </section>
-
-
-    <!-- PROJECTS -->
-    <section id="projects">
-
-        <h2 class="section-title">
-            Featured <span>Projects</span>
-        </h2>
-
-        <p class="section-intro">
-            Selected cybersecurity, forensic, penetration testing
-            and cloud security projects.
-        </p>
-
-        <div class="projects">
-
-
-            <!-- PROJECT 01 -->
-            <div class="project">
-
-                <div class="project-number">
-                    01 — DIGITAL FORENSICS
-                </div>
-
-                <h3>
-                    Forensic Disk Imaging
-                </h3>
-
-                <p>
-                    Practical forensic acquisition and evidence
-                    preservation workflow.
-                </p>
-
-                <ul>
-                    <li>DC3DD / DCFLDD</li>
-                    <li>Forensic disk imaging</li>
-                    <li>SHA-256 verification</li>
-                    <li>Evidence integrity</li>
-                    <li>Evidence preservation</li>
-                </ul>
-
-            </div>
-
-
-            <!-- PROJECT 02 -->
-            <div class="project">
-
-                <div class="project-number">
-                    02 — NETWORK FORENSICS
-                </div>
-
-                <h3>
-                    Wireshark Network Forensics
-                </h3>
-
-                <p>
-                    Network traffic investigation and identification
-                    of suspicious communication patterns.
-                </p>
-
-                <ul>
-                    <li>Packet analysis</li>
-                    <li>DNS tunneling</li>
-                    <li>Data exfiltration</li>
-                    <li>Malicious file transfer investigation</li>
-                </ul>
-
-            </div>
-
-
-            <!-- PROJECT 03 -->
-            <div class="project">
-
-                <div class="project-number">
-                    03 — AZURE CLOUD
-                </div>
-
-                <h3>
-                    Azure Multi-Tier Architecture
-                </h3>
-
-                <p>
-                    Designed and configured a multi-tier cloud
-                    environment using Microsoft Azure.
-                </p>
-
-                <ul>
-                    <li>Azure Virtual Network</li>
-                    <li>Subnet architecture</li>
-                    <li>Network Security Groups</li>
-                    <li>VM Scale Set</li>
-                    <li>Availability Zones</li>
-                    <li>Azure Load Balancer</li>
-                    <li>Apache Web Server</li>
-                    <li>MySQL Flexible Server</li>
-                </ul>
-
-            </div>
-
-
-            <!-- PROJECT 04 -->
-            <div class="project">
-
-                <div class="project-number">
-                    04 — CLOUD FORENSICS
-                </div>
-
-                <h3>
-                    Azure Cloud Forensics
-                </h3>
-
-                <p>
-                    Cloud forensic workflow focused on preserving
-                    virtual machine evidence and maintaining evidence
-                    integrity.
-                </p>
-
-                <ul>
-                    <li>Azure VM evidence</li>
-                    <li>VM images</li>
-                    <li>Snapshots</li>
-                    <li>Evidence preservation</li>
-                    <li>Cloud forensic investigation</li>
-                </ul>
-
-            </div>
-
-
-            <!-- PROJECT 05 -->
-            <div class="project">
-
-                <div class="project-number">
-                    05 — AZURE STORAGE
-                </div>
-
-                <h3>
-                    Azure Storage Security
-                </h3>
-
-                <p>
-                    Hands-on exploration of Azure storage services
-                    and security mechanisms.
-                </p>
-
-                <ul>
-                    <li>Storage Accounts</li>
-                    <li>Blob Storage</li>
-                    <li>Azure Files</li>
-                    <li>Queue Storage</li>
-                    <li>Table Storage</li>
-                    <li>Managed Disks</li>
-                    <li>Storage replication</li>
-                    <li>RBAC & SAS concepts</li>
-                </ul>
-
-            </div>
-
-
-            <!-- PROJECT 06 -->
-            <div class="project">
-
-                <div class="project-number">
-                    06 — PENETRATION TESTING
-                </div>
-
-                <h3>
-                    Penetration Testing Labs
-                </h3>
-
-                <p>
-                    Hands-on security testing and vulnerability
-                    assessment across practical cybersecurity
-                    environments.
-                </p>
-
-                <ul>
-                    <li>Reconnaissance</li>
-                    <li>Vulnerability assessment</li>
-                    <li>Web application testing</li>
-                    <li>Network security testing</li>
-                    <li>Security assessment</li>
-                </ul>
-
-            </div>
-
-
-            <!-- PROJECT 07 -->
-            <div class="project">
-
-                <div class="project-number">
-                    07 — MALWARE ANALYSIS
-                </div>
-
-                <h3>
-                    Malware Analysis
-                </h3>
-
-                <p>
-                    Practical analysis of suspicious files and
-                    malicious network behavior.
-                </p>
-
-                <ul>
-                    <li>Malicious file investigation</li>
-                    <li>Network indicators</li>
-                    <li>IOC identification</li>
-                    <li>Behavioral analysis</li>
-                </ul>
-
-            </div>
-
-
-            <!-- PROJECT 08 -->
-            <div class="project">
-
-                <div class="project-number">
-                    08 — SECURITY RESEARCH
-                </div>
-
-                <h3>
-                    Vulnerability Research
-                </h3>
-
-                <p>
-                    Security research involving vulnerability discovery,
-                    validation and responsible disclosure.
-                </p>
-
-                <ul>
-                    <li>Vulnerability analysis</li>
-                    <li>Proof-of-concept testing</li>
-                    <li>Security research</li>
-                    <li>Responsible disclosure</li>
-                </ul>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- EXPERIENCE -->
-    <section id="experience">
-
-        <h2 class="section-title">
-            Professional <span>Experience</span>
-        </h2>
-
-        <div class="experience">
-
-
-            <div class="timeline-item">
-
-                <h3>
-                    Cybersecurity Trainer
-                </h3>
-
-                <div class="date">
-                    Training & Practical Labs
-                </div>
-
-                <p>
-                    Delivered cybersecurity training and practical
-                    hands-on sessions covering cybersecurity concepts,
-                    penetration testing, digital forensics and
-                    security tools.
-                </p>
-
-            </div>
-
-
-            <div class="timeline-item">
-
-                <h3>
-                    Project-Based Cybersecurity Work
-                </h3>
-
-                <div class="date">
-                    Corvit
-                </div>
-
-                <p>
-                    Worked on practical cybersecurity and cloud-based
-                    projects involving Microsoft Azure, digital
-                    forensics, penetration testing and security-focused
-                    laboratory environments.
-                </p>
-
-            </div>
-
-
-            <div class="timeline-item">
-
-                <h3>
-                    Cybersecurity & Security Research
-                </h3>
-
-                <div class="date">
-                    Vulnerability Research
-                </div>
-
-                <p>
-                    Conducted practical security research involving
-                    vulnerability analysis, validation, proof-of-concept
-                    testing and responsible disclosure.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- CONTACT -->
-    <section id="contact">
-
-        <div class="contact-box">
-
-            <h2 class="section-title">
-                Let's <span>Connect</span>
-            </h2>
+            <h3>
+                Cloud & Forensics
+            </h3>
 
             <p>
-                Interested in cybersecurity, penetration testing,
-                digital forensics, cloud security or security research?
-                Feel free to connect with me.
+
+                Hands-on work with Microsoft Azure environments,
+                cloud infrastructure, storage, networking,
+                virtual machine images, snapshots and
+                cloud-based forensic concepts.
+
             </p>
-
-            <div class="buttons">
-
-
-                <!-- LINKEDIN -->
-                <a
-                    href="https://www.linkedin.com/in/huma-khan-076553289/"
-                    class="btn"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    LinkedIn
-                </a>
-
-
-                <!-- GITHUB -->
-                <a
-                    href="https://github.com/huma-menahil"
-                    class="btn"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    GitHub
-                </a>
-
-
-                <!-- EMAIL -->
-                <!-- Replace YOUR_EMAIL@example.com with your real email -->
-                <a
-                    href="mailto:YOUR_EMAIL@example.com"
-                    class="btn">
-                    Email Me
-                </a>
-
-
-            </div>
 
         </div>
 
-    </section>
+
+    </div>
+
+</section>
 
 
-    <!-- FOOTER -->
-    <footer>
 
-        © 2026 Huma Menahil.
-        Cybersecurity Portfolio.
+<!-- ========================= -->
+<!-- SKILLS -->
+<!-- ========================= -->
 
-    </footer>
+<section id="skills">
+
+    <h2 class="section-title">
+
+        Technical <span>Skills</span>
+
+    </h2>
+
+    <p class="section-intro">
+
+        Technologies and cybersecurity areas I work with.
+
+    </p>
+
+
+    <div class="skills">
+
+        <div class="skill">
+            Penetration Testing
+        </div>
+
+        <div class="skill">
+            VAPT
+        </div>
+
+        <div class="skill">
+            Web Security
+        </div>
+
+        <div class="skill">
+            Network Security
+        </div>
+
+        <div class="skill">
+            Digital Forensics
+        </div>
+
+        <div class="skill">
+            Network Forensics
+        </div>
+
+        <div class="skill">
+            Malware Analysis
+        </div>
+
+        <div class="skill">
+            Vulnerability Research
+        </div>
+
+        <div class="skill">
+            Cloud Security
+        </div>
+
+        <div class="skill">
+            Microsoft Azure
+        </div>
+
+        <div class="skill">
+            Wireshark
+        </div>
+
+        <div class="skill">
+            Nmap
+        </div>
+
+        <div class="skill">
+            Metasploit
+        </div>
+
+        <div class="skill">
+            Kali Linux
+        </div>
+
+        <div class="skill">
+            DC3DD
+        </div>
+
+        <div class="skill">
+            DCFLDD
+        </div>
+
+        <div class="skill">
+            Python
+        </div>
+
+        <div class="skill">
+            C++
+        </div>
+
+        <div class="skill">
+            SQL
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ========================= -->
+<!-- PROJECTS -->
+<!-- ========================= -->
+
+<section id="projects">
+
+    <h2 class="section-title">
+
+        Featured <span>Projects</span>
+
+    </h2>
+
+    <p class="section-intro">
+
+        Selected cybersecurity, forensic,
+        penetration testing and cloud security projects.
+
+    </p>
+
+
+    <div class="projects">
+
+
+        <div class="project">
+
+            <div class="project-number">
+                01 — DIGITAL FORENSICS
+            </div>
+
+            <h3>
+                Forensic Disk Imaging
+            </h3>
+
+            <p>
+
+                Practical forensic acquisition
+                and evidence preservation workflow.
+
+            </p>
+
+            <ul>
+
+                <li>
+                    DC3DD / DCFLDD
+                </li>
+
+                <li>
+                    Forensic disk imaging
+                </li>
+
+                <li>
+                    SHA-256 verification
+                </li>
+
+                <li>
+                    Evidence integrity
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="project">
+
+            <div class="project-number">
+                02 — NETWORK FORENSICS
+            </div>
+
+            <h3>
+                Wireshark Network Forensics
+            </h3>
+
+            <p>
+
+                Network traffic investigation
+                and identification of suspicious
+                communication patterns.
+
+            </p>
+
+            <ul>
+
+                <li>
+                    Packet analysis
+                </li>
+
+                <li>
+                    DNS tunneling
+                </li>
+
+                <li>
+                    Data exfiltration
+                </li>
+
+                <li>
+                    Malicious file transfer investigation
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="project">
+
+            <div class="project-number">
+                03 — AZURE CLOUD
+            </div>
+
+            <h3>
+                Azure Multi-Tier Architecture
+            </h3>
+
+            <p>
+
+                Designed and configured a
+                multi-tier cloud environment
+                using Microsoft Azure.
+
+            </p>
+
+            <ul>
+
+                <li>
+                    Azure Virtual Network
+                </li>
+
+                <li>
+                    Subnets & NSGs
+                </li>
+
+                <li>
+                    VM Scale Set
+                </li>
+
+                <li>
+                    Availability Zones
+                </li>
+
+                <li>
+                    Load Balancer
+                </li>
+
+                <li>
+                    Apache Web Server
+                </li>
+
+                <li>
+                    MySQL Flexible Server
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="project">
+
+            <div class="project-number">
+                04 — CLOUD FORENSICS
+            </div>
+
+            <h3>
+                Azure Cloud Forensics
+            </h3>
+
+            <p>
+
+                Cloud forensic workflow focused
+                on preserving virtual machine
+                evidence and maintaining evidence integrity.
+
+            </p>
+
+            <ul>
+
+                <li>
+                    VM Images
+                </li>
+
+                <li>
+                    Snapshots
+                </li>
+
+                <li>
+                    Evidence Preservation
+                </li>
+
+                <li>
+                    Cloud Forensic Concepts
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="project">
+
+            <div class="project-number">
+                05 — AZURE STORAGE
+            </div>
+
+            <h3>
+                Azure Storage Security
+            </h3>
+
+            <p>
+
+                Hands-on exploration of Azure
+                storage services and security mechanisms.
+
+            </p>
+
+            <ul>
+
+                <li>
+                    Storage Accounts
+                </li>
+
+                <li>
+                    Blob Storage
+                </li>
+
+                <li>
+                    Azure Files
+                </li>
+
+                <li>
+                    Queue Storage
+                </li>
+
+                <li>
+                    Table Storage
+                </li>
+
+                <li>
+                    Managed Disks
+                </li>
+
+                <li>
+                    Storage Replication
+                </li>
+
+                <li>
+                    RBAC & SAS Concepts
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="project">
+
+            <div class="project-number">
+                06 — PENETRATION TESTING
+            </div>
+
+            <h3>
+                Penetration Testing Labs
+            </h3>
+
+            <p>
+
+                Hands-on security testing
+                and vulnerability assessment
+                across practical environments.
+
+            </p>
+
+            <ul>
+
+                <li>
+                    Reconnaissance
+                </li>
+
+                <li>
+                    Vulnerability Assessment
+                </li>
+
+                <li>
+                    Web Security Testing
+                </li>
+
+                <li>
+                    Network Security Testing
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="project">
+
+            <div class="project-number">
+                07 — MALWARE ANALYSIS
+            </div>
+
+            <h3>
+                Malware Analysis
+            </h3>
+
+            <p>
+
+                Practical analysis of suspicious
+                files and malicious network behavior.
+
+            </p>
+
+            <ul>
+
+                <li>
+                    Malicious File Investigation
+                </li>
+
+                <li>
+                    IOC Identification
+                </li>
+
+                <li>
+                    Network Indicators
+                </li>
+
+                <li>
+                    Behavioral Analysis
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="project">
+
+            <div class="project-number">
+                08 — SECURITY RESEARCH
+            </div>
+
+            <h3>
+                Vulnerability Research
+            </h3>
+
+            <p>
+
+                Security research involving
+                vulnerability discovery, validation
+                and responsible disclosure.
+
+            </p>
+
+            <ul>
+
+                <li>
+                    Vulnerability Analysis
+                </li>
+
+                <li>
+                    Proof-of-Concept Testing
+                </li>
+
+                <li>
+                    Security Research
+                </li>
+
+                <li>
+                    Responsible Disclosure
+                </li>
+
+            </ul>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ========================= -->
+<!-- EXPERIENCE -->
+<!-- ========================= -->
+
+<section id="experience">
+
+    <h2 class="section-title">
+
+        Professional <span>Experience</span>
+
+    </h2>
+
+
+    <div class="experience">
+
+
+        <div class="timeline-item">
+
+            <h3>
+                Cybersecurity Trainer &
+                Project-Based Cybersecurity Professional
+            </h3>
+
+            <div class="date">
+
+                Corvit · Remote · 3 Years
+
+            </div>
+
+            <p>
+
+                Worked as a project-based cybersecurity
+                trainer for 3 years, delivering remote
+                training and practical hands-on
+                cybersecurity sessions.
+
+            </p>
+
+            <br>
+
+            <p>
+
+                Conducted practical labs and guided
+                learners in Penetration Testing, VAPT,
+                Malware Analysis, Digital Forensics,
+                Network Forensics and cybersecurity tools.
+
+            </p>
+
+            <br>
+
+            <p>
+
+                Worked on project-based cybersecurity
+                tasks involving Microsoft Azure,
+                cloud security, digital forensics,
+                penetration testing and security-focused
+                laboratory environments.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ========================= -->
+<!-- CERTIFICATIONS -->
+<!-- ========================= -->
+
+<section id="certifications">
+
+    <h2 class="section-title">
+
+        Professional <span>Certifications</span>
+
+    </h2>
+
+    <p class="section-intro">
+
+        Professional certifications and cybersecurity
+        training credentials.
+
+    </p>
+
+
+    <div class="certifications">
+
+
+        <!-- CEH NAVTTC -->
+
+        <div class="certificate">
+
+            <div class="certificate-icon">
+                🛡️
+            </div>
+
+            <h3>
+                Certified Ethical Hacker (CEH)
+            </h3>
+
+            <div class="issuer">
+                NAVTTC
+            </div>
+
+            <p>
+                Certified Ethical Hacking
+                and cybersecurity training.
+            </p>
+
+        </div>
+
+
+        <!-- CEH EC COUNCIL -->
+
+        <div class="certificate">
+
+            <div class="certificate-icon">
+                🔐
+            </div>
+
+            <h3>
+                Certified Ethical Hacker (CEH)
+            </h3>
+
+            <div class="issuer">
+                EC-Council
+            </div>
+
+            <p>
+                Ethical hacking, penetration
+                testing and cybersecurity.
+            </p>
+
+        </div>
+
+
+        <!-- CCNA -->
+
+        <div class="certificate">
+
+            <div class="certificate-icon">
+                🌐
+            </div>
+
+            <h3>
+                CCNA Cyber Security
+            </h3>
+
+            <div class="issuer">
+                Cisco
+            </div>
+
+            <p>
+                Networking and cybersecurity
+                fundamentals.
+            </p>
+
+        </div>
+
+
+        <!-- DIGITAL FORENSICS -->
+
+        <div class="certificate">
+
+            <div class="certificate-icon">
+                🔎
+            </div>
+
+            <h3>
+                Digital Forensics
+            </h3>
+
+            <div class="issuer">
+                Cybersecurity Certification
+            </div>
+
+            <p>
+                Digital evidence handling,
+                forensic investigation and analysis.
+            </p>
+
+        </div>
+
+
+        <!-- FORTIGATE -->
+
+        <div class="certificate">
+
+            <div class="certificate-icon">
+                🛡️
+            </div>
+
+            <h3>
+                FortiGate Certification
+            </h3>
+
+            <div class="issuer">
+                Fortinet
+            </div>
+
+            <p>
+                Network security and
+                firewall security concepts.
+            </p>
+
+        </div>
+
+
+        <!-- PALO ALTO -->
+
+        <div class="certificate">
+
+            <div class="certificate-icon">
+                🔥
+            </div>
+
+            <h3>
+                Palo Alto Networks
+            </h3>
+
+            <div class="issuer">
+                Palo Alto Networks
+            </div>
+
+            <p>
+                Network security and
+                next-generation firewall concepts.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ========================= -->
+<!-- CONTACT -->
+<!-- ========================= -->
+
+<section id="contact">
+
+    <div class="contact-box">
+
+        <h2 class="section-title">
+
+            Let's <span>Connect</span>
+
+        </h2>
+
+        <p>
+
+            Interested in cybersecurity, penetration
+            testing, digital forensics, cloud security
+            or security research? Feel free to connect.
+
+        </p>
+
+
+        <div class="buttons">
+
+
+            <!-- LINKEDIN -->
+
+            <a
+                href="https://www.linkedin.com/in/huma-khan-076553289/"
+                class="btn"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                LinkedIn
+
+            </a>
+
+
+            <!-- GITHUB -->
+
+            <a
+                href="https://github.com/huma-menahil"
+                class="btn"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                GitHub
+
+            </a>
+
+
+            <!-- EMAIL -->
+
+            <a
+                href="mailto:YOUR_EMAIL@example.com"
+                class="btn">
+
+                Email Me
+
+            </a>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
+<footer>
+
+    © 2026 Huma Menahil · Cybersecurity Professional
+
+</footer>
+
 
 </body>
+
 </html>
