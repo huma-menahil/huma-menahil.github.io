@@ -7,7 +7,7 @@
     <title>Huma Menahil | Cybersecurity Professional</title>
 
     <meta name="description"
-          content="Huma Menahil - Cybersecurity Professional, Penetration Tester, Digital Forensics and Cloud Security practitioner.">
+          content="Huma Menahil - Cybersecurity Professional, Penetration Tester, Digital Forensics, Cloud Security, Malware Analysis and Security Research.">
 
     <style>
         * {
@@ -33,7 +33,7 @@
             position: sticky;
             top: 0;
             z-index: 1000;
-            background: rgba(8, 11, 16, 0.95);
+            background: rgba(8, 11, 16, 0.97);
             border-bottom: 1px solid #1f2937;
             padding: 18px 7%;
             display: flex;
@@ -76,7 +76,7 @@
         }
 
         .hero-content {
-            max-width: 850px;
+            max-width: 900px;
         }
 
         .tag {
@@ -99,7 +99,7 @@
 
         .hero p {
             color: #94a3b8;
-            max-width: 700px;
+            max-width: 760px;
             font-size: 18px;
             margin-bottom: 30px;
         }
@@ -111,6 +111,7 @@
         }
 
         .btn {
+            display: inline-block;
             padding: 12px 22px;
             border: 1px solid #38bdf8;
             border-radius: 6px;
@@ -126,6 +127,8 @@
 
         .btn:hover {
             transform: translateY(-3px);
+            background: #38bdf8;
+            color: #061018;
         }
 
         section {
@@ -144,7 +147,7 @@
 
         .section-intro {
             color: #94a3b8;
-            max-width: 750px;
+            max-width: 800px;
             margin-bottom: 40px;
         }
 
@@ -189,6 +192,12 @@
             border-radius: 5px;
             color: #cbd5e1;
             font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .skill:hover {
+            border-color: #38bdf8;
+            color: #38bdf8;
         }
 
         .projects {
@@ -202,12 +211,19 @@
             border: 1px solid #1f2937;
             border-radius: 10px;
             padding: 28px;
+            transition: 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
         }
 
         .project-number {
             color: #38bdf8;
             font-size: 13px;
             margin-bottom: 12px;
+            letter-spacing: 1px;
         }
 
         .project h3 {
@@ -225,8 +241,12 @@
             color: #cbd5e1;
         }
 
+        .project li {
+            margin-bottom: 5px;
+        }
+
         .experience {
-            max-width: 850px;
+            max-width: 900px;
         }
 
         .timeline-item {
@@ -251,13 +271,13 @@
 
         .contact-box {
             text-align: center;
-            max-width: 750px;
+            max-width: 800px;
             margin: auto;
         }
 
         .contact-box p {
             color: #94a3b8;
-            margin: 15px 0 25px;
+            margin: 15px 0 30px;
         }
 
         footer {
@@ -268,6 +288,7 @@
         }
 
         @media (max-width: 800px) {
+
             .nav-links {
                 display: none;
             }
@@ -286,9 +307,12 @@
 
 <body>
 
-    <!-- Navigation -->
+    <!-- NAVIGATION -->
     <nav>
-        <div class="logo">Huma<span>.</span></div>
+
+        <div class="logo">
+            Huma<span>.</span>
+        </div>
 
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
@@ -297,14 +321,18 @@
             <li><a href="#experience">Experience</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+
     </nav>
 
 
-    <!-- Hero -->
+    <!-- HERO SECTION -->
     <header class="hero">
+
         <div class="hero-content">
 
-            <div class="tag">Cybersecurity Professional</div>
+            <div class="tag">
+                Cybersecurity Professional
+            </div>
 
             <h1>
                 Huma <span>Menahil</span>
@@ -317,18 +345,28 @@
             </p>
 
             <div class="buttons">
-                <a href="#projects" class="btn primary">View Projects</a>
-                <a href="#contact" class="btn">Contact Me</a>
+
+                <a href="#projects" class="btn primary">
+                    View Projects
+                </a>
+
+                <a href="#contact" class="btn">
+                    Contact Me
+                </a>
+
             </div>
 
         </div>
+
     </header>
 
 
-    <!-- About -->
+    <!-- ABOUT -->
     <section id="about">
 
-        <h2 class="section-title">About <span>Me</span></h2>
+        <h2 class="section-title">
+            About <span>Me</span>
+        </h2>
 
         <p class="section-intro">
             I am a cybersecurity professional with hands-on experience in
@@ -339,16 +377,21 @@
         <div class="about-grid">
 
             <div class="card">
+
                 <h3>Cybersecurity</h3>
 
                 <p>
-                    Practical experience with security testing, vulnerability
-                    assessment, penetration testing, network investigation,
-                    malware analysis and cybersecurity labs.
+                    Practical experience with security testing,
+                    vulnerability assessment, penetration testing,
+                    network investigation, malware analysis and
+                    cybersecurity labs.
                 </p>
+
             </div>
 
+
             <div class="card">
+
                 <h3>Cloud & Forensics</h3>
 
                 <p>
@@ -356,6 +399,7 @@
                     cloud infrastructure, storage, networking, VM images,
                     snapshots and cloud-based forensic concepts.
                 </p>
+
             </div>
 
         </div>
@@ -363,10 +407,12 @@
     </section>
 
 
-    <!-- Skills -->
+    <!-- SKILLS -->
     <section id="skills">
 
-        <h2 class="section-title">Technical <span>Skills</span></h2>
+        <h2 class="section-title">
+            Technical <span>Skills</span>
+        </h2>
 
         <p class="section-intro">
             Technologies and cybersecurity areas I work with.
@@ -376,7 +422,7 @@
 
             <div class="skill">Penetration Testing</div>
             <div class="skill">VAPT</div>
-            <div class="skill">Web Security</div>
+            <div class="skill">Web Application Security</div>
             <div class="skill">Network Security</div>
             <div class="skill">Digital Forensics</div>
             <div class="skill">Network Forensics</div>
@@ -399,25 +445,35 @@
     </section>
 
 
-    <!-- Projects -->
+    <!-- PROJECTS -->
     <section id="projects">
 
-        <h2 class="section-title">Featured <span>Projects</span></h2>
+        <h2 class="section-title">
+            Featured <span>Projects</span>
+        </h2>
 
         <p class="section-intro">
-            Selected cybersecurity, forensic and cloud projects.
+            Selected cybersecurity, forensic, penetration testing
+            and cloud security projects.
         </p>
 
         <div class="projects">
 
-            <div class="project">
-                <div class="project-number">01 — DIGITAL FORENSICS</div>
 
-                <h3>Forensic Disk Imaging</h3>
+            <!-- PROJECT 01 -->
+            <div class="project">
+
+                <div class="project-number">
+                    01 — DIGITAL FORENSICS
+                </div>
+
+                <h3>
+                    Forensic Disk Imaging
+                </h3>
 
                 <p>
-                    Practical forensic acquisition and evidence preservation
-                    workflow.
+                    Practical forensic acquisition and evidence
+                    preservation workflow.
                 </p>
 
                 <ul>
@@ -425,18 +481,26 @@
                     <li>Forensic disk imaging</li>
                     <li>SHA-256 verification</li>
                     <li>Evidence integrity</li>
+                    <li>Evidence preservation</li>
                 </ul>
+
             </div>
 
 
+            <!-- PROJECT 02 -->
             <div class="project">
-                <div class="project-number">02 — NETWORK FORENSICS</div>
 
-                <h3>Wireshark Network Forensics</h3>
+                <div class="project-number">
+                    02 — NETWORK FORENSICS
+                </div>
+
+                <h3>
+                    Wireshark Network Forensics
+                </h3>
 
                 <p>
-                    Network traffic investigation and identification of
-                    suspicious communication patterns.
+                    Network traffic investigation and identification
+                    of suspicious communication patterns.
                 </p>
 
                 <ul>
@@ -445,54 +509,162 @@
                     <li>Data exfiltration</li>
                     <li>Malicious file transfer investigation</li>
                 </ul>
+
             </div>
 
 
+            <!-- PROJECT 03 -->
             <div class="project">
-                <div class="project-number">03 — AZURE</div>
 
-                <h3>Azure Multi-Tier Architecture</h3>
+                <div class="project-number">
+                    03 — AZURE CLOUD
+                </div>
+
+                <h3>
+                    Azure Multi-Tier Architecture
+                </h3>
 
                 <p>
-                    Designed and configured a multi-tier cloud environment
-                    using Microsoft Azure.
+                    Designed and configured a multi-tier cloud
+                    environment using Microsoft Azure.
                 </p>
 
                 <ul>
                     <li>Azure Virtual Network</li>
-                    <li>Subnets & NSGs</li>
+                    <li>Subnet architecture</li>
+                    <li>Network Security Groups</li>
                     <li>VM Scale Set</li>
                     <li>Availability Zones</li>
-                    <li>Load Balancer</li>
+                    <li>Azure Load Balancer</li>
                     <li>Apache Web Server</li>
                     <li>MySQL Flexible Server</li>
                 </ul>
+
             </div>
 
 
+            <!-- PROJECT 04 -->
             <div class="project">
-                <div class="project-number">04 — CLOUD SECURITY</div>
 
-                <h3>Azure Cloud Forensics</h3>
+                <div class="project-number">
+                    04 — CLOUD FORENSICS
+                </div>
+
+                <h3>
+                    Azure Cloud Forensics
+                </h3>
 
                 <p>
-                    Cloud forensic workflow focused on preserving virtual
-                    machine evidence and maintaining evidence integrity.
+                    Cloud forensic workflow focused on preserving
+                    virtual machine evidence and maintaining evidence
+                    integrity.
                 </p>
 
                 <ul>
+                    <li>Azure VM evidence</li>
                     <li>VM images</li>
                     <li>Snapshots</li>
                     <li>Evidence preservation</li>
-                    <li>Cloud forensic concepts</li>
+                    <li>Cloud forensic investigation</li>
                 </ul>
+
             </div>
 
 
+            <!-- PROJECT 05 -->
             <div class="project">
-                <div class="project-number">05 — SECURITY RESEARCH</div>
 
-                <h3>Vulnerability Research</h3>
+                <div class="project-number">
+                    05 — AZURE STORAGE
+                </div>
+
+                <h3>
+                    Azure Storage Security
+                </h3>
+
+                <p>
+                    Hands-on exploration of Azure storage services
+                    and security mechanisms.
+                </p>
+
+                <ul>
+                    <li>Storage Accounts</li>
+                    <li>Blob Storage</li>
+                    <li>Azure Files</li>
+                    <li>Queue Storage</li>
+                    <li>Table Storage</li>
+                    <li>Managed Disks</li>
+                    <li>Storage replication</li>
+                    <li>RBAC & SAS concepts</li>
+                </ul>
+
+            </div>
+
+
+            <!-- PROJECT 06 -->
+            <div class="project">
+
+                <div class="project-number">
+                    06 — PENETRATION TESTING
+                </div>
+
+                <h3>
+                    Penetration Testing Labs
+                </h3>
+
+                <p>
+                    Hands-on security testing and vulnerability
+                    assessment across practical cybersecurity
+                    environments.
+                </p>
+
+                <ul>
+                    <li>Reconnaissance</li>
+                    <li>Vulnerability assessment</li>
+                    <li>Web application testing</li>
+                    <li>Network security testing</li>
+                    <li>Security assessment</li>
+                </ul>
+
+            </div>
+
+
+            <!-- PROJECT 07 -->
+            <div class="project">
+
+                <div class="project-number">
+                    07 — MALWARE ANALYSIS
+                </div>
+
+                <h3>
+                    Malware Analysis
+                </h3>
+
+                <p>
+                    Practical analysis of suspicious files and
+                    malicious network behavior.
+                </p>
+
+                <ul>
+                    <li>Malicious file investigation</li>
+                    <li>Network indicators</li>
+                    <li>IOC identification</li>
+                    <li>Behavioral analysis</li>
+                </ul>
+
+            </div>
+
+
+            <!-- PROJECT 08 -->
+            <div class="project">
+
+                <div class="project-number">
+                    08 — SECURITY RESEARCH
+                </div>
+
+                <h3>
+                    Vulnerability Research
+                </h3>
 
                 <p>
                     Security research involving vulnerability discovery,
@@ -505,25 +677,7 @@
                     <li>Security research</li>
                     <li>Responsible disclosure</li>
                 </ul>
-            </div>
 
-
-            <div class="project">
-                <div class="project-number">06 — PENETRATION TESTING</div>
-
-                <h3>Penetration Testing Labs</h3>
-
-                <p>
-                    Hands-on security testing and vulnerability assessment
-                    across practical cybersecurity environments.
-                </p>
-
-                <ul>
-                    <li>Reconnaissance</li>
-                    <li>Vulnerability assessment</li>
-                    <li>Web security testing</li>
-                    <li>Network security testing</li>
-                </ul>
             </div>
 
         </div>
@@ -531,24 +685,31 @@
     </section>
 
 
-    <!-- Experience -->
+    <!-- EXPERIENCE -->
     <section id="experience">
 
-        <h2 class="section-title">Professional <span>Experience</span></h2>
+        <h2 class="section-title">
+            Professional <span>Experience</span>
+        </h2>
 
         <div class="experience">
 
+
             <div class="timeline-item">
 
-                <h3>Cybersecurity Trainer</h3>
+                <h3>
+                    Cybersecurity Trainer
+                </h3>
 
-                <div class="date">Training & Practical Labs</div>
+                <div class="date">
+                    Training & Practical Labs
+                </div>
 
                 <p>
                     Delivered cybersecurity training and practical
-                    hands-on sessions covering security concepts,
+                    hands-on sessions covering cybersecurity concepts,
                     penetration testing, digital forensics and
-                    cybersecurity tools.
+                    security tools.
                 </p>
 
             </div>
@@ -556,15 +717,38 @@
 
             <div class="timeline-item">
 
-                <h3>Project-Based Cybersecurity Work</h3>
+                <h3>
+                    Project-Based Cybersecurity Work
+                </h3>
 
-                <div class="date">Corvit</div>
+                <div class="date">
+                    Corvit
+                </div>
 
                 <p>
                     Worked on practical cybersecurity and cloud-based
-                    projects involving Azure, digital forensics,
-                    penetration testing and security-focused lab
-                    environments.
+                    projects involving Microsoft Azure, digital
+                    forensics, penetration testing and security-focused
+                    laboratory environments.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <h3>
+                    Cybersecurity & Security Research
+                </h3>
+
+                <div class="date">
+                    Vulnerability Research
+                </div>
+
+                <p>
+                    Conducted practical security research involving
+                    vulnerability analysis, validation, proof-of-concept
+                    testing and responsible disclosure.
                 </p>
 
             </div>
@@ -574,12 +758,14 @@
     </section>
 
 
-    <!-- Contact -->
+    <!-- CONTACT -->
     <section id="contact">
 
         <div class="contact-box">
 
-            <h2 class="section-title">Let's <span>Connect</span></h2>
+            <h2 class="section-title">
+                Let's <span>Connect</span>
+            </h2>
 
             <p>
                 Interested in cybersecurity, penetration testing,
@@ -589,18 +775,35 @@
 
             <div class="buttons">
 
-                <!-- Replace these links with your real profiles -->
-                <a href="https://github.com/huma-menahil"
-                   class="btn"
-                   target="_blank">
+
+                <!-- LINKEDIN -->
+                <a
+                    href="https://www.linkedin.com/in/huma-khan-076553289/"
+                    class="btn"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+
+
+                <!-- GITHUB -->
+                <a
+                    href="https://github.com/huma-menahil"
+                    class="btn"
+                    target="_blank"
+                    rel="noopener noreferrer">
                     GitHub
                 </a>
 
-                <a href="#"
-                   class="btn"
-                   target="_blank">
-                    LinkedIn
+
+                <!-- EMAIL -->
+                <!-- Replace YOUR_EMAIL@example.com with your real email -->
+                <a
+                    href="mailto:YOUR_EMAIL@example.com"
+                    class="btn">
+                    Email Me
                 </a>
+
 
             </div>
 
@@ -609,8 +812,12 @@
     </section>
 
 
+    <!-- FOOTER -->
     <footer>
-        © 2026 Huma Menahil. Cybersecurity Portfolio.
+
+        © 2026 Huma Menahil.
+        Cybersecurity Portfolio.
+
     </footer>
 
 </body>
