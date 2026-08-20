@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Huma Menahil | Cybersecurity Professional</title>
+
+    <meta name="description"
+          content="Huma Menahil - Cybersecurity Professional, Penetration Tester, Digital Forensics and Cloud Security practitioner.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #080b10;
+            color: #e6edf3;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(8, 11, 16, 0.95);
+            border-bottom: 1px solid #1f2937;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #38bdf8;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #cbd5e1;
+            font-size: 14px;
+        }
+
+        .nav-links a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            padding: 80px 7%;
+            background:
+                radial-gradient(circle at 80% 20%, #0c3550 0%, transparent 30%),
+                #080b10;
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .tag {
+            color: #38bdf8;
+            font-size: 15px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: clamp(45px, 7vw, 80px);
+            line-height: 1.05;
+            margin-bottom: 20px;
+        }
+
+        h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            color: #94a3b8;
+            max-width: 700px;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 22px;
+            border: 1px solid #38bdf8;
+            border-radius: 6px;
+            color: #38bdf8;
+            transition: 0.3s;
+        }
+
+        .btn.primary {
+            background: #38bdf8;
+            color: #061018;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+        }
+
+        section {
+            padding: 90px 7%;
+            border-bottom: 1px solid #151c25;
+        }
+
+        .section-title {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .section-title span {
+            color: #38bdf8;
+        }
+
+        .section-intro {
+            color: #94a3b8;
+            max-width: 750px;
+            margin-bottom: 40px;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 35px;
+        }
+
+        .card {
+            background: #0d1219;
+            border: 1px solid #1f2937;
+            border-radius: 10px;
+            padding: 25px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+            color: #f8fafc;
+        }
+
+        .card p {
+            color: #94a3b8;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            background: #0d1219;
+            border: 1px solid #263244;
+            padding: 10px 16px;
+            border-radius: 5px;
+            color: #cbd5e1;
+            font-size: 14px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+        }
+
+        .project {
+            background: #0d1219;
+            border: 1px solid #1f2937;
+            border-radius: 10px;
+            padding: 28px;
+        }
+
+        .project-number {
+            color: #38bdf8;
+            font-size: 13px;
+            margin-bottom: 12px;
+        }
+
+        .project h3 {
+            margin-bottom: 12px;
+            font-size: 21px;
+        }
+
+        .project p {
+            color: #94a3b8;
+            margin-bottom: 15px;
+        }
+
+        .project ul {
+            padding-left: 20px;
+            color: #cbd5e1;
+        }
+
+        .experience {
+            max-width: 850px;
+        }
+
+        .timeline-item {
+            border-left: 2px solid #38bdf8;
+            padding: 0 0 35px 25px;
+            margin-bottom: 25px;
+        }
+
+        .timeline-item h3 {
+            margin-bottom: 5px;
+        }
+
+        .timeline-item .date {
+            color: #38bdf8;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .timeline-item p {
+            color: #94a3b8;
+        }
+
+        .contact-box {
+            text-align: center;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .contact-box p {
+            color: #94a3b8;
+            margin: 15px 0 25px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        @media (max-width: 800px) {
+            .nav-links {
+                display: none;
+            }
+
+            .about-grid,
+            .projects {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                min-height: 80vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Huma<span>.</span></div>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="hero-content">
+
+            <div class="tag">Cybersecurity Professional</div>
+
+            <h1>
+                Huma <span>Menahil</span>
+            </h1>
+
+            <p>
+                Cybersecurity Professional focused on Penetration Testing,
+                Digital & Network Forensics, Cloud Security, Malware Analysis,
+                Vulnerability Research and Cybersecurity Training.
+            </p>
+
+            <div class="buttons">
+                <a href="#projects" class="btn primary">View Projects</a>
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- About -->
+    <section id="about">
+
+        <h2 class="section-title">About <span>Me</span></h2>
+
+        <p class="section-intro">
+            I am a cybersecurity professional with hands-on experience in
+            penetration testing, digital forensics, network forensics,
+            cloud security, malware analysis and security research.
+        </p>
+
+        <div class="about-grid">
+
+            <div class="card">
+                <h3>Cybersecurity</h3>
+
+                <p>
+                    Practical experience with security testing, vulnerability
+                    assessment, penetration testing, network investigation,
+                    malware analysis and cybersecurity labs.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Cloud & Forensics</h3>
+
+                <p>
+                    Hands-on work with Microsoft Azure environments,
+                    cloud infrastructure, storage, networking, VM images,
+                    snapshots and cloud-based forensic concepts.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <h2 class="section-title">Technical <span>Skills</span></h2>
+
+        <p class="section-intro">
+            Technologies and cybersecurity areas I work with.
+        </p>
+
+        <div class="skills">
+
+            <div class="skill">Penetration Testing</div>
+            <div class="skill">VAPT</div>
+            <div class="skill">Web Security</div>
+            <div class="skill">Network Security</div>
+            <div class="skill">Digital Forensics</div>
+            <div class="skill">Network Forensics</div>
+            <div class="skill">Malware Analysis</div>
+            <div class="skill">Vulnerability Research</div>
+            <div class="skill">Cloud Security</div>
+            <div class="skill">Microsoft Azure</div>
+            <div class="skill">Wireshark</div>
+            <div class="skill">Nmap</div>
+            <div class="skill">Metasploit</div>
+            <div class="skill">Kali Linux</div>
+            <div class="skill">DC3DD</div>
+            <div class="skill">DCFLDD</div>
+            <div class="skill">Python</div>
+            <div class="skill">C++</div>
+            <div class="skill">SQL</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+
+        <p class="section-intro">
+            Selected cybersecurity, forensic and cloud projects.
+        </p>
+
+        <div class="projects">
+
+            <div class="project">
+                <div class="project-number">01 — DIGITAL FORENSICS</div>
+
+                <h3>Forensic Disk Imaging</h3>
+
+                <p>
+                    Practical forensic acquisition and evidence preservation
+                    workflow.
+                </p>
+
+                <ul>
+                    <li>DC3DD / DCFLDD</li>
+                    <li>Forensic disk imaging</li>
+                    <li>SHA-256 verification</li>
+                    <li>Evidence integrity</li>
+                </ul>
+            </div>
+
+
+            <div class="project">
+                <div class="project-number">02 — NETWORK FORENSICS</div>
+
+                <h3>Wireshark Network Forensics</h3>
+
+                <p>
+                    Network traffic investigation and identification of
+                    suspicious communication patterns.
+                </p>
+
+                <ul>
+                    <li>Packet analysis</li>
+                    <li>DNS tunneling</li>
+                    <li>Data exfiltration</li>
+                    <li>Malicious file transfer investigation</li>
+                </ul>
+            </div>
+
+
+            <div class="project">
+                <div class="project-number">03 — AZURE</div>
+
+                <h3>Azure Multi-Tier Architecture</h3>
+
+                <p>
+                    Designed and configured a multi-tier cloud environment
+                    using Microsoft Azure.
+                </p>
+
+                <ul>
+                    <li>Azure Virtual Network</li>
+                    <li>Subnets & NSGs</li>
+                    <li>VM Scale Set</li>
+                    <li>Availability Zones</li>
+                    <li>Load Balancer</li>
+                    <li>Apache Web Server</li>
+                    <li>MySQL Flexible Server</li>
+                </ul>
+            </div>
+
+
+            <div class="project">
+                <div class="project-number">04 — CLOUD SECURITY</div>
+
+                <h3>Azure Cloud Forensics</h3>
+
+                <p>
+                    Cloud forensic workflow focused on preserving virtual
+                    machine evidence and maintaining evidence integrity.
+                </p>
+
+                <ul>
+                    <li>VM images</li>
+                    <li>Snapshots</li>
+                    <li>Evidence preservation</li>
+                    <li>Cloud forensic concepts</li>
+                </ul>
+            </div>
+
+
+            <div class="project">
+                <div class="project-number">05 — SECURITY RESEARCH</div>
+
+                <h3>Vulnerability Research</h3>
+
+                <p>
+                    Security research involving vulnerability discovery,
+                    validation and responsible disclosure.
+                </p>
+
+                <ul>
+                    <li>Vulnerability analysis</li>
+                    <li>Proof-of-concept testing</li>
+                    <li>Security research</li>
+                    <li>Responsible disclosure</li>
+                </ul>
+            </div>
+
+
+            <div class="project">
+                <div class="project-number">06 — PENETRATION TESTING</div>
+
+                <h3>Penetration Testing Labs</h3>
+
+                <p>
+                    Hands-on security testing and vulnerability assessment
+                    across practical cybersecurity environments.
+                </p>
+
+                <ul>
+                    <li>Reconnaissance</li>
+                    <li>Vulnerability assessment</li>
+                    <li>Web security testing</li>
+                    <li>Network security testing</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Experience -->
+    <section id="experience">
+
+        <h2 class="section-title">Professional <span>Experience</span></h2>
+
+        <div class="experience">
+
+            <div class="timeline-item">
+
+                <h3>Cybersecurity Trainer</h3>
+
+                <div class="date">Training & Practical Labs</div>
+
+                <p>
+                    Delivered cybersecurity training and practical
+                    hands-on sessions covering security concepts,
+                    penetration testing, digital forensics and
+                    cybersecurity tools.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <h3>Project-Based Cybersecurity Work</h3>
+
+                <div class="date">Corvit</div>
+
+                <p>
+                    Worked on practical cybersecurity and cloud-based
+                    projects involving Azure, digital forensics,
+                    penetration testing and security-focused lab
+                    environments.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <div class="contact-box">
+
+            <h2 class="section-title">Let's <span>Connect</span></h2>
+
+            <p>
+                Interested in cybersecurity, penetration testing,
+                digital forensics, cloud security or security research?
+                Feel free to connect with me.
+            </p>
+
+            <div class="buttons">
+
+                <!-- Replace these links with your real profiles -->
+                <a href="https://github.com/huma-menahil"
+                   class="btn"
+                   target="_blank">
+                    GitHub
+                </a>
+
+                <a href="#"
+                   class="btn"
+                   target="_blank">
+                    LinkedIn
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        © 2026 Huma Menahil. Cybersecurity Portfolio.
+    </footer>
+
+</body>
+</html>
